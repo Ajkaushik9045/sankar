@@ -56,7 +56,7 @@ lib/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/taskly.git
+   git clone https://github.com/Ajkaushik9045/sankar
    cd taskly
    ```
 
@@ -66,11 +66,11 @@ lib/
    ```
 
 3. **Firebase Configuration**:
-   - Create a new project on [Firebase Console](https://console.firebase.google.com/).
-   - Enable **Email/Password** Authentication.
-   - Create a **Firestore Database** in test mode (or apply the rules in the next step).
-   - Add an Android app with package name `com.example.sankar`.
-   - Download `google-services.json` and place it in `android/app/`.
+   - Install the FlutterFire CLI: `dart pub global activate flutterfire_cli`
+   - Log in to Firebase: `firebase login`
+   - Configure the project: `flutterfire configure`
+   - This will automatically generate `firebase_options.dart` and configure your Android/iOS apps.
+   - Ensure **Email/Password** Authentication and **Firestore Database** are enabled in the [Firebase Console](https://console.firebase.google.com/).
 
 4. **Firestore Security Rules**:
    Apply the following rules in your Firebase Console:
@@ -89,10 +89,3 @@ lib/
    flutter run
    ```
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements.
